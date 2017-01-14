@@ -1,0 +1,2 @@
+The hyperpolarized case rarely spikes more than 1-3x. (notable exceptions: Apr_12_13_A and May_31_13_D)
+

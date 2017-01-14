@@ -1,0 +1,60 @@
+2 Methods:
+
+1. Unpaired Method
+	a. Patch on many cells.
+	b. Record the input resistance, using the delay and/or time after to measure the resting voltage.
+	c. Record the spikeforms for a couple input currents.
+	d. Break seal with current cell.
+	e. Put in propofol.
+	f. Repeat a. through c.
+
+2. Paired Method
+	a. Patch on cell.
+	b. Record the input resistance, using the delay and/or time after to measure the resting voltage.
+	c. Record the spikeforms for a couple input currents.
+	d. Put in propofol without breaking seal.
+	e. Repeat b. and c.
+	f. Repeat a. through e. for many cells.
+
+Input Resistance Protocol (Do not bring the cell to -60 mV):
+Delay = 2 sec
+Starting Current = -55 pA
+Finishing Current = 20 pA
+Increments = 20
+Pulse Duration = 1 sec
+Pause Duration = 1 sec
+Record Length = 44 sec
+
+Spikeform Protocol (Bring cell to -60 mV):
+Delay = 10 sec
+Starting Current = 90 pA
+Finishing Current = 100 pA
+Increments = 2
+Pulse Duration = 50 sec
+Pause Duration = 20 sec
+Record Length = 160 sec
+
+
+Protocol for time experiments:
+1. Patch on a cell
+2. Run resting_potential protocol:
+    -2 sec delay
+    -0 pA starting and ending currents
+    -1 increment
+    -2 sec pulse duration
+    -5 sec pause duration
+    -10 sec total time
+3. Run input_resistance protocol:
+    -2 sec delay
+    --55 pA to 20 pA
+    -20 increments
+    -1 sec pulse
+    -1 sec pause
+    -44 sec total time
+4. Run fi_curves protocol:
+    -2 sec delay
+    -10 pA to 150 pA
+    -10 increments
+    -5 sec pulse
+    -10 sec pause
+    -145 sec total time
